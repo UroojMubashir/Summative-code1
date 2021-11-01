@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 int main()
 {
@@ -7,10 +8,18 @@ int main()
     int age;
     cout << "Kindly Enter  your full name : ";
     cin.getline(name, 20);
-    cout << "Kindly Enter your  marks (between 0 - 100): ";
-    cin >> mark;
-    cout << "Kindly Enter your age:" << endl;
+     cout << "Kindly Enter your age:";
     cin >> age;
+
+    cout << "Kindly Enter your  marks for two subjects (between 0 - 100):";
+    
+    double s1,s2;
+    int average;
+    cin>>s1;
+    cin>>s2;
+    cin >> mark;
+    if(!cin.fail()&&
+    
 
 
     if (mark > 100 || mark < 0) mark = -10;
@@ -26,9 +35,12 @@ int main()
     case 2:;
     case 1:;
     case 0:cout << "Name: " << name << "\nGrade F\n"; break;
+    cout<<"Average is:"<<(s1+s2)/2 <<endl;
+    
     default: cout << "Invalid marks\n";
     }
     return 0;
 }
+
 
 
